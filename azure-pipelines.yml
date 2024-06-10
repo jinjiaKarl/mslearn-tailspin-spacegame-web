@@ -7,9 +7,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps:git add azure-pipelines.yml
-git commit -m "Add build tasks"
-git push origin build-pipeline
+steps:
 - task: UseDotNet@2
   displayName: 'Use .NET SDK 6.x'
   inputs:
